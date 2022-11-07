@@ -1,0 +1,38 @@
+ul {
+    &#languages {
+        li {
+            display: inline-block;
+            padding: 0 1em;
+
+            a {
+                text-decoration: none;
+
+                &:link {
+                    color: var(--color-lighter-black);
+                }
+            
+                &:active {
+                    color: var(--color-lighter-black);
+                }
+            
+                &:hover, &:focus {
+                    color: var(--color-violet-one);
+                    cursor: pointer;
+                }
+            
+                &:visited {
+                    color: var(--color-lighter-black);
+                }
+            }
+        }
+
+        width: max-content;
+        position: absolute;
+        top: 50%;
+        right: 2em;
+        transform: translateY(-50%);
+        right: 2em;
+    }
+
+    list-style: none;
+}

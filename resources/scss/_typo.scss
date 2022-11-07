@@ -1,0 +1,28 @@
+h1, h2, h3, h4, h5, h6 {
+    &.set-outline--dark {
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--color-lighter-black);
+    }
+    &.center-content {
+        text-align: center;
+    }
+    max-width: max-content;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    &.change-color-lighter-black {
+        color: var(--color-dark-black);
+    }
+
+    &.change-appearance--light {
+        font-weight: 300;
+    }
+
+    letter-spacing: .09em;
+    line-height: 1.5em;
+}

@@ -1,0 +1,16 @@
+.hide-content {
+    @keyframes hide-content {
+        from { opacity: 1 }
+        to { opacity: 0; }
+    }
+    opacity: 0;
+    animation: hide-content .5s .125s ease-out forwards;
+}
+
+.reveal-content {
+    @keyframes reveal-content {
+        from { opacity: 0 }
+        to { opacity: 1; }
+    }
+    animation: reveal-content .5s .125s ease-in forwards;
+}

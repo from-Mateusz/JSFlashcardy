@@ -1,0 +1,11 @@
+$color-lighter-black: #707070;
+$color-dark-black: #2B2D42;
+$color-light-grey: #dee2e6;
+$color-violet-one: #a06cd5;
+
+:root {
+    --color-lighter-black: #{$color-lighter-black};
+    --color-dark-black: #{$color-dark-black};
+    --color-light-grey: #{$color-light-grey};
+    --color-violet-one: #{$color-violet-one};
+}

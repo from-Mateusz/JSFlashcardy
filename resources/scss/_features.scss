@@ -1,0 +1,10 @@
+.use-custom-scrollbar::-webkit-scrollbar {
+    width: 1px;
+    color: var(--color-violet-one);
+    background-color: var(--color-light-grey);
+}
+
+.use-custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(142, 148, 242, .75) var(--color-light-grey);
+}
