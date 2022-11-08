@@ -50,7 +50,7 @@
                     <h1 class="set-outline--dark">Join us today!</h1>
                     <p class="change-color-light--dark">Together we can accelerate learning process and build a great, transparent and helpful community!</p>
     
-                    <form action="#" class="form">
+                    <form action="#" class="form" id="join-us-form">
                         <p class="form__introduction change-appearance--light">
                             Hey stranger. My name is Mateusz and I am the creator of this 
                             such a simple but helpful application. First and foremost, I would
@@ -58,19 +58,23 @@
                         </p>
     
                         <div class="form__entry">
-                            <input type="text" placeholder="Your name eg. Kate">
+                            <input type="text" placeholder="Your name eg. Kate" name="player_name">
                         </div>
     
                         <div class="form__entry">
-                            <input type="email" placeholder="Your email eg. john@doe.com">
+                            <input type="email" placeholder="Your email eg. john@doe.com" name="player_email">
                         </div>
     
                         <div class="form__entry">
-                            <input type="password" placeholder="Your strong password">
+                            <input type="password" placeholder="Your strong password" name="player_password">
                         </div>
                         
                         <div class="form__element">
-                            <button type="submit">let's start</button>
+                            <div class="keyboard-btn-like-container--med scheme-black-hole-smoke-white center-by-margins">
+                                <div class="button--med transform-into--keyboard-key">
+                                    <a href="#" class="link--unlink" id="submit-join-us-btn">let's start</a>
+                                </div>
+                            </div>
                         </div>
     
                         <footer>
@@ -81,17 +85,32 @@
     
                 <section>
                     <h1 class="set-outline--dark">How about a quick dry run?</h1>
-                    <button>PREVIEW FLASHCARDS</button>
+                    <div class="keyboard-btn-like-container--huge scheme-black-hole-smoke-white center-by-margins">
+                        <div class="button--med transform-into--keyboard-key">
+                            <a href="#" class="link--unlink" id="submit-join-us-btn">preview flashcards</a>
+                        </div>
+                    </div>
                 </section>
             </section>
         </div>
 
         <div id="container-2">
             <section class="hiden-but-revealed extended">
-                <h1 class="set-outline--dark margins-auto">Preview our student's flashcards</h1>
+                <h1 class="set-outline--dark center-by-margins">Preview our student's flashcards</h1>
+                <form action="#" class="form-v2" id="search-flashcards-form">
+                    <div class="form__entry">
+                        <input type="text" placeholder="Search by keywords within notions, description, tags" name="flashcard_keyword">
+                    </div>
+
+                    <ul id="tags">
+                        <li>Mathematics</li>
+                        <li>Number theory</li>
+                    </ul>
+                </form>
             </section>
         </div>
     </main>
 </body>
-<script src="../resources/js/welcome-min.js"></script>
+<!-- <script src="../resources/js/join-us.js"></script> -->
+<script src="../resources/js/deploy/_welcome.js"></script>
 </html>

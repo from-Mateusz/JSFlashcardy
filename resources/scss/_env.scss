@@ -2,10 +2,18 @@ $color-lighter-black: #707070;
 $color-dark-black: #2B2D42;
 $color-light-grey: #dee2e6;
 $color-violet-one: #a06cd5;
+$color-violet-last: #3C096C;
+$color-light-gold: #F6E7CB;
+$color-gold: #eed3a0;
+$color-light-smoke-white: #f8f9fa;
 
 :root {
     --color-lighter-black: #{$color-lighter-black};
     --color-dark-black: #{$color-dark-black};
     --color-light-grey: #{$color-light-grey};
     --color-violet-one: #{$color-violet-one};
+    --color-light-gold: #{$color-light-gold};
+    --color-gold: #{$color-gold};
+    --color-light-smoke-white: #{$color-light-smoke-white};
+    --color-violet-last: #{$color-violet-last};
 }

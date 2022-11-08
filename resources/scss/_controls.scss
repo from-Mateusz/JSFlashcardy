@@ -1,0 +1,181 @@
+#kickstart-btn-like-container {
+    width: 100px;
+    height: 30px;
+    position: relative;
+
+    .button-like--med {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background-color: var(--color-light-smoke-white);
+        z-index: 1;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transition: top .25s ease-out, left .25s ease-out;
+
+        &:hover {
+            cursor: pointer;
+            top: 5px;
+            left: -5px;
+        }
+    }
+
+    &::before {
+        content: "";
+        width: 100px;
+        height: 30px;
+        background-color: var(--color-dark-black);
+        position: absolute;
+        z-index: 0;
+        left: -5px;
+        top: 5px;
+    }
+}
+
+.keyboard-btn-like-container--med {
+
+    width: 100px;
+    height: 30px;
+    position: relative;
+
+    &.scheme-violet-smoke-white {
+        .button--med {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: var(--color-light-smoke-white);
+            z-index: 1;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            transition: top .25s ease-out, left .25s ease-out;
+    
+            &:hover {
+                cursor: pointer;
+                top: 5px;
+                left: -5px;
+            }
+        }
+    
+        &::before {
+            content: "";
+            width: 100px;
+            height: 30px;
+            background-color: var(--color-violet-last);
+            position: absolute;
+            z-index: 0;
+            left: -5px;
+            top: 5px;
+        }
+    }
+
+    &.scheme-black-hole-smoke-white {
+        .button--med {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: var(--color-light-smoke-white);
+            z-index: 1;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            transition: top .25s ease-out, left .25s ease-out;
+    
+            &:hover {
+                cursor: pointer;
+                top: 5px;
+                left: -5px;
+            }
+        }
+    
+        &::before {
+            content: "";
+            width: 100px;
+            height: 30px;
+            background-color: var(--color-dark-black);
+            position: absolute;
+            z-index: 0;
+            left: -5px;
+            top: 5px;
+        }
+    }
+}
+
+.keyboard-btn-like-container--huge {
+
+    width: 200px;
+    height: 30px;
+    position: relative;
+
+    &.scheme-violet-smoke-white {
+        .button--huge {
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: var(--color-light-smoke-white);
+            z-index: 1;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            transition: top .25s ease-out, left .25s ease-out;
+    
+            &:hover {
+                cursor: pointer;
+                top: 5px;
+                left: -5px;
+            }
+        }
+    
+        &::before {
+            content: "";
+            width: 200px;
+            height: 30px;
+            background-color: var(--color-violet-last);
+            position: absolute;
+            z-index: 0;
+            left: -5px;
+            top: 5px;
+        }
+    }
+
+    &.scheme-black-hole-smoke-white {
+        .button--med {
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: var(--color-light-smoke-white);
+            z-index: 1;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            transition: top .25s ease-out, left .25s ease-out;
+    
+            &:hover {
+                cursor: pointer;
+                top: 5px;
+                left: -5px;
+            }
+        }
+    
+        &::before {
+            content: "";
+            width: 200px;
+            height: 30px;
+            background-color: var(--color-dark-black);
+            position: absolute;
+            z-index: 0;
+            left: -5px;
+            top: 5px;
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+}
