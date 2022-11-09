@@ -37,11 +37,18 @@
                 </section>
                 <section>
                     <h1 class="set-outline--dark">Our flashcards are super simple but powerful</h1>
-                    <p class="change-color-light--dark">Playing and learning with flashcards is great, but preparing all these flashcards, cutting them out of the paper 
-                        might be tedious and non-environmental friendly (paper usage). Using digital version of flashcards is different. 
-                        It is easy to create, edit and getting rid of unwanted flashcard without leaving any footprint. Further more, 
-                        you can explore flashcards that has been published by other students from different areas, which have helped 
-                        them grasp some specific subjects.</p>
+                    <div class="flashcards flexify">
+                        <div class="flashcard small front">
+                            <div class="flashcard__notion-wrapper">
+                                <p class="flashcard__notion">Como esta usted?</p>
+                            </div>
+                        </div>
+                        <div class="flashcard small back">
+                            <div class="flashcard__notion-wrapper">
+                                <p class="flashcard__notion">How are you?</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </section>
     
@@ -71,8 +78,8 @@
                         
                         <div class="form__element">
                             <div class="keyboard-btn-like-container--med scheme-black-hole-smoke-white center-by-margins">
-                                <div class="button--med transform-into--keyboard-key">
-                                    <a href="#" class="link--unlink" id="submit-join-us-btn">let's start</a>
+                                <div class="button--med transform-into--keyboard-key" id="submit-join-us-btn">
+                                    <a href="#" class="link--unlink">let's start</a>
                                 </div>
                             </div>
                         </div>
@@ -86,8 +93,8 @@
                 <section>
                     <h1 class="set-outline--dark">How about a quick dry run?</h1>
                     <div class="keyboard-btn-like-container--huge scheme-black-hole-smoke-white center-by-margins">
-                        <div class="button--med transform-into--keyboard-key">
-                            <a href="#" class="link--unlink" id="submit-join-us-btn">preview flashcards</a>
+                        <div class="button--med transform-into--keyboard-key" id="preview-flashcards-btn">
+                            <a href="#container-2" class="link--unlink">preview flashcards</a>
                         </div>
                     </div>
                 </section>
@@ -96,17 +103,19 @@
 
         <div id="container-2">
             <section class="hiden-but-revealed extended">
-                <h1 class="set-outline--dark center-by-margins">Preview our student's flashcards</h1>
-                <form action="#" class="form-v2" id="search-flashcards-form">
-                    <div class="form__entry">
-                        <input type="text" placeholder="Search by keywords within notions, description, tags" name="flashcard_keyword">
-                    </div>
+                <section class="extended">
+                    <h1 class="set-outline--dark center-by-margins">Preview our student's flashcards</h1>
+                    <form action="#" class="form-v2" id="search-flashcards-form">
+                        <div class="form__entry">
+                            <input type="text" placeholder="Search by keywords within notions, description, tags" name="flashcard_keyword">
+                        </div>
 
-                    <ul id="tags">
-                        <li>Mathematics</li>
-                        <li>Number theory</li>
-                    </ul>
-                </form>
+                        <ul id="tags">
+                            <li>Mathematics</li>
+                            <li>Number theory</li>
+                        </ul>
+                    </form>
+                </section>
             </section>
         </div>
     </main>

@@ -2,11 +2,13 @@ import JoinUsManager from "./join-us";
 
 window.onload = () => {
     const joinUsManager = new JoinUsManager();
-    const totalAltitude = document.body.getBoundingClientRect().height;
+    
     document.body.addEventListener("scroll", (ev) => {
         revealContent();
         handleHeaderReadability();
     });
+    
+    activatePreviewFlashcardsButton();
 };
 
 const revealContent = () => {
@@ -37,6 +39,32 @@ const handleHeaderReadability = () => {
     else {
         setDefaultHeaderReadability();
     }
+}
+
+const activatePreviewFlashcardsButton = () => {
+    const btn = document.getElementById("preview-flashcards-btn");
+    if(!btn) return;
+    
+    const link = btn.querySelector("a");
+    const linkTarget = link.href.split("#").pop();
+    const targetElement = document.getElementById(linkTarget);
+
+    link.addEventListener("click", (ev) => {
+        ev.preventDefault();
+    });
+
+    btn.addEventListener("click", (ev) => {
+        jumpTo(targetElement);
+    })
+};
+
+const jumpTo = (element) => {
+    if(!element) return;
+    const stop = element.getBoundingClientRect().height * .5; // Stop to scroll at the half of the element should be enought to reveal content
+    document.body.scrollTo({
+        top: stop,
+        behavior: "smooth"
+    });
 }
 
 const makeHeaderMoreReadable = () => {
