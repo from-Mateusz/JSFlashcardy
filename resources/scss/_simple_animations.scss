@@ -14,3 +14,30 @@
     }
     animation: reveal-content .5s .125s ease-in forwards;
 }
+
+.animate-gradient-text-1 {
+    @keyframes gradient-animation-2 { 
+        0% {
+            background-position: 0, 0;
+        }
+        25% {
+            background-position: 20%, 20%;
+        }
+        50% {
+            background-position: 50% 50%;
+        }
+        75% {
+            background-position: 20%, 20%;
+        }
+        100% {
+            background-position: 0, 0;
+        }
+    }
+
+    background: linear-gradient(-45deg, #724cf9, #B4436C, #5DD39E,  #724cf9, #B4436C, #5DD39E);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: gradient-animation-2 4s .25s ease infinite;
+}

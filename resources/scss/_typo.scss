@@ -4,6 +4,13 @@ h1, h2, h3, h4, h5, h6 {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: var(--color-lighter-black);
     }
+    &.set-gradient-text-1 {
+        background: linear-gradient(-45deg, #724cf9, #B4436C, #5DD39E,  #724cf9, #B4436C, #5DD39E);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400% 400%;
+    }
     &.center-content {
         text-align: center;
     }
@@ -21,6 +28,10 @@ p {
 
     &.change-appearance--light {
         font-weight: 300;
+    }
+
+    &.set-font-size-medium-root-rel {
+        font-size: 1.25rem;
     }
 
     letter-spacing: .09em;

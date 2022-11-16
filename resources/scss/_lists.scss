@@ -34,7 +34,7 @@ ul {
         right: 2em;
     }
 
-    &#tags {
+    &.tags {
         li {
             @keyframes animate-gradient-background {
                 0% {
@@ -69,6 +69,29 @@ ul {
             border-radius: 8px;
             margin-right: 1em;
             animation: animate-gradient-background 4s ease infinite;
+        }
+    }
+
+    &.flashcard-examples {
+        color: var(--color-lighter-black);
+        font-style: italic;
+        font-weight: 300;
+        letter-spacing: .025em;
+
+        li.example {
+            // &::after {
+            //     content: "";
+            //     display: block;
+            //     position: absolute;
+            //     bottom: 0;
+            //     width: 100%;
+            //     border: .5px solid var(--color-light-grey)
+            // }
+
+            // position: ;
+            padding-bottom: 1em;
+            border-bottom: 1px solid var(--color-light-grey);
+            margin-bottom: 1em;
         }
     }
 

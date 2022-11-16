@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../resources/css/style.css">
 </head>
 <body class="use-custom-scrollbar">
-    <header>
+    <nav id="top-nav">
         <div class="app-logo-container">
             <img src="../resources/images/flashcardy_light.svg" alt="application-logo" aria-label="application-logo" id="app-logo">
         </div>
@@ -16,27 +16,55 @@
             <li><a href="#">pl &ensp; 🇵🇱</a></li>
             <li><a href="#">en &ensp; 🇬🇧</a></li>
         </ul>
-    </header>
+    </nav>
     <main>
-        <div id="container-1" class="flexify flexify-align-items--center flexify-justify-content--evenly">
-            <section>
+        <div id="container-1" class="flexify">
+            <section class="max-content-width add-padding-top--huge">
+                <div>
+                    <img src="../resources/images/girl-learing-top-main.jpg" alt="" id="top-main-learning-girl-image">
+                </div>
+            </section>
+            <section class="add-padding-top--huge">
+                <h1 class="animate-gradient-text-1">Learning complex notions should be rather easy</h1>
+                <p class="change-color-light--dark add-bottom-margin--medium set-font-size-medium-root-rel">Oh yeah, Next complex topic to comprehend. A great deal of the 
+                    new notions I must learn and learn it good.</p>
+                <p class="change-color-light--dark add-bottom-margin--medium set-font-size-medium-root-rel">We know this feeling can be frustrating at times, 
+                    but who said it has to be like that. We all inteligent
+                    persons, thus we can and we ought to learn in
+                    an intelligent way.</p>
+
+                <p class="change-color-light--dark add-bottom-margin--medium set-font-size-medium-root-rel">Amplify your learning capacity by our simple
+                    flashcards, memorizing games and real-life
+                    examples, because we think that dry knowledge
+                    without distinct application remains just
+                    a dry knowledge that is easy to forget.</p>
+
+                <div class="keyboard-btn-like-container--huge scheme-black-hole-smoke-white center-by-margins">
+                    <div class="button--med transform-into--keyboard-key" id="preview-flashcards-btn">
+                        <a href="#container-2" class="link--unlink">Join us free!</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container-n flexify flexify-align-items--center flexify-justify-content--evenly">
+            <section class="hidden-but-revealed flexify flexify-justify-content--evenly flexify-columnar set-full-height half-width">
                 <section>
-                    <h1 class="set-outline--dark">Why should I use flashcards?</h1>
-                    <p class="change-color-light--dark">When used correctly, flash cards allow students to interact with information in a way that makes it easier to retain. 
+                    <h1 class="set-gradient-text-1">Why should I use flashcards?</h1>
+                    <p class="change-color-light--dark set-font-size-medium-root-rel">When used correctly, flash cards allow students to interact with information in a way that makes it easier to retain. 
                         Flash cards are strategically designed to enhance and encourage active recall. The format, usually a question on one 
                         side of the card and the answer on the other, requires learners to look at one side and recall the information from 
                         the other side.</p>
                 </section>
                 <section>
-                    <h1 class="set-outline--dark">Preparing flashcards can be cumbersome</h1>
-                    <p class="change-color-light--dark">Playing and learning with flashcards is great, but preparing all these flashcards, cutting them out of the paper 
+                    <h1 class="set-gradient-text-1">Preparing flashcards can be cumbersome</h1>
+                    <p class="change-color-light--dark set-font-size-medium-root-rel">Playing and learning with flashcards is great, but preparing all these flashcards, cutting them out of the paper 
                         might be tedious and non-environmental friendly (paper usage). Using digital version of flashcards is different. 
                         It is easy to create, edit and getting rid of unwanted flashcard without leaving any footprint. Further more, 
                         you can explore flashcards that has been published by other students from different areas, which have helped 
                         them grasp some specific subjects.</p>
                 </section>
                 <section>
-                    <h1 class="set-outline--dark">Our flashcards are super simple but powerful</h1>
+                    <h1 class="set-gradient-text-1">Our flashcards are super simple but powerful</h1>
                     <div class="flashcards flexify">
                         <div class="flashcard small front">
                             <div class="flashcard__notion-wrapper">
@@ -52,13 +80,13 @@
                 </section>
             </section>
     
-            <section>
+            <section class="hidden-but-revealed flexify flexify-justify-content--evenly flexify-columnar set-full-height half-width">
                 <section>
-                    <h1 class="set-outline--dark">Join us today!</h1>
-                    <p class="change-color-light--dark">Together we can accelerate learning process and build a great, transparent and helpful community!</p>
+                    <h1 class="set-gradient-text-1">Join us today!</h1>
+                    <p class="change-color-light--dark set-font-size-medium-root-rel">Together we can accelerate learning process and build a great, transparent and helpful community!</p>
     
                     <form action="#" class="form" id="join-us-form">
-                        <p class="form__introduction change-appearance--light">
+                        <p class="form__introduction change-appearance--light set-font-size-medium-root-rel">
                             Hey stranger. My name is Mateusz and I am the creator of this 
                             such a simple but helpful application. First and foremost, I would
                             like to get to know you closer. Please, tell me your name.
@@ -91,7 +119,7 @@
                 </section>
     
                 <section>
-                    <h1 class="set-outline--dark">How about a quick dry run?</h1>
+                    <h1 class="set-gradient-text-1 add-bottom-margin--medium">How about a quick dry run?</h1>
                     <div class="keyboard-btn-like-container--huge scheme-black-hole-smoke-white center-by-margins">
                         <div class="button--med transform-into--keyboard-key" id="preview-flashcards-btn">
                             <a href="#container-2" class="link--unlink">preview flashcards</a>
@@ -101,20 +129,90 @@
             </section>
         </div>
 
-        <div id="container-2">
-            <section class="hiden-but-revealed extended">
+        <div class="container-n add-padding-top-including-top-nav">
+            <section class="hidden-but-revealed extended flexify flexify-justify-content--evenly flexify-columnar set-full-height">
                 <section class="extended">
-                    <h1 class="set-outline--dark center-by-margins">Preview our student's flashcards</h1>
+                    <h1 class="set-gradient-text-1 center-by-margins">Preview our student's flashcards</h1>
                     <form action="#" class="form-v2" id="search-flashcards-form">
                         <div class="form__entry">
                             <input type="text" placeholder="Search by keywords within notions, description, tags" name="flashcard_keyword">
                         </div>
 
-                        <ul id="tags">
+                        <ul class="tags">
                             <li>Mathematics</li>
                             <li>Number theory</li>
                         </ul>
                     </form>
+                </section>
+                <section class="extended">
+                    <div class="flashcards flexify flexify-shrinkless flashcards-horizontal-gallery">
+                        <div class="flashcard broad front flexify-shrinkless">
+                            <div class="flashcard__notion-wrapper">
+                                <p class="flashcard__notion">Como esta usted?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flashcard-area-broad flexify-shrinkless">
+                            <div class="flashcard broad back add-bottom-margin-small">
+                                <div class="flashcard__notion-wrapper">
+                                    <p class="flashcard__notion">Como esta usted?</p>
+                                </div>
+                            </div>
+                            <ul class="tags add-bottom-margin--medium">
+                                <li>Mathematics</li>
+                                <li>Number theory</li>
+                            </ul>
+                            <ul class="flashcard-examples">
+                                <li class="example">"With your famous parents any jobs is for the taking</li>
+                                <li class="example">"Having famous family member means everything is for the taking for you"</li>
+                            </ul>
+                        </div>
+
+                        <div class="flashcard broad front flexify-shrinkless">
+                            <div class="flashcard__notion-wrapper">
+                                <p class="flashcard__notion">Como esta usted?</p>
+                            </div>
+                        </div>
+
+                        <div class="flashcard broad front flexify-shrinkless">
+                            <div class="flashcard__notion-wrapper">
+                                <p class="flashcard__notion">Como esta usted?</p>
+                            </div>
+                        </div>
+
+                        <div class="flashcard broad front flexify-shrinkless">
+                            <div class="flashcard__notion-wrapper">
+                                <p class="flashcard__notion">Como esta usted?</p>
+                            </div>
+                        </div>
+
+                        <div class="flashcard broad front flexify-shrinkless">
+                            <div class="flashcard__notion-wrapper">
+                                <p class="flashcard__notion">Como esta usted?</p>
+                            </div>
+                        </div>
+                        
+                         <div class="nav-load-next-btn">
+                            <div class="nav-load-next-btn__inner">
+                                <p class="label">N</p>
+                            </div>
+                         </div>
+                    </div>
+                </section>
+
+                <section class="extended">
+                    <h1 class="set-gradient-text-1">Do you like it?</h1>
+                    <div class="flexify">
+                        <div class="keyboard-btn-like-container--med scheme-black-hole-smoke-white add-right-margin--medium">
+                            <div class="button--med transform-into--keyboard-key" id="preview-flashcards-btn">
+                                <a href="#container-2" class="link--unlink">Join us!</a>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Already have an account?</p>
+                            <a href="#">Sign in</a>
+                        </div>
+                    </div>
                 </section>
             </section>
         </div>

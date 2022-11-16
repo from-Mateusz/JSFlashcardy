@@ -9,3 +9,11 @@
 .flexify-justify-content--evenly {
     justify-content: space-evenly;
 }
+
+.flexify-shrinkless {
+    flex-shrink: 0;
+}
+
+.flexify-columnar {
+    flex-flow: column nowrap;
+}

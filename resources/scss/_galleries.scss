@@ -1,0 +1,87 @@
+.flashcards-horizontal-gallery {
+    .nav-load-next-btn {
+        @keyframes fade-in-out-anim {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: .5;
+            }
+            50% {
+                opacity: 1;
+            }
+            75% {
+                opacity: .5;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .nav-load-next-btn__inner {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--color-light-gold);
+            color: var(--color-dark-black);
+            border-color: var(--color-dark-black);
+            border: 1px var(--color-light-grey) solid;
+            border-top: 0;
+            border-bottom: 0;
+            z-index: 1;
+            box-shadow: -3px 0px 0px -1px rgba(0, 0, 0, .05);
+
+            p.label {
+                text-align: center;
+                line-height: 50px;
+                font-size: 2em;
+                font-weight: 700;
+                color: var(--color-lighter-black);
+            }
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 48px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--color-light-gold);
+            border: 1px solid var(--color-light-grey);
+            box-shadow: -3px 0px 0px -1px rgba(0, 0, 0, .05);
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 48px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--color-light-gold);
+            border: 1px solid var(--color-light-grey);
+            bottom: 0;
+            box-shadow: -3px 0px 0px -1px rgba(0, 0, 0, .05);
+        }
+
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+            transition: opacity .125s ease-in;
+            animation: unset;
+        }
+
+        position: absolute;
+        height: 100px;
+        width: 50px;
+        top: 50px;
+        right: 0;
+        opacity: 0;
+        animation: fade-in-out-anim 2s ease-in-out infinite;
+    }
+
+    overflow-x: hidden;
+    position: relative;
+}

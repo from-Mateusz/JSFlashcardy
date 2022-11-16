@@ -5,15 +5,15 @@ window.onload = () => {
     
     document.body.addEventListener("scroll", (ev) => {
         revealContent();
-        handleHeaderReadability();
+        handleTopNavReadability();
     });
     
     activatePreviewFlashcardsButton();
 };
 
 const revealContent = () => {
-    const nextContainers = [ document.getElementById("container-2") ];
-    const reveal = document.body.scrollTop > document.body.clientHeight * .25; // let's reveal content at 25% of the vh 
+    const nextContainers = [ ...document.querySelectorAll(".container-n") ];
+    const reveal = document.body.scrollTop > document.body.clientHeight * .25; // reveal container's content on 25% scroll alongside container
     if(reveal) {
         const nextContainerToReveal = nextContainers[ Math.ceil(document.body.scrollTop / document.body.clientHeight) - 1 ];
         
@@ -21,8 +21,8 @@ const revealContent = () => {
         
         const sections = nextContainerToReveal.querySelectorAll("section");
         for(let section of sections) {
-            if(!section.classList.contains("reveal-content")) {
-                const shouldBeRevealed = (document.body.scrollTop % document.body.clientHeight) >= section.getBoundingClientRect().height;
+            if(section.classList.contains("hidden-but-revealed") && !section.classList.contains("reveal-content")) {
+                const shouldBeRevealed = (document.body.scrollTop + document.body.clientHeight) > section.offsetTop * 1.1;
                 if(shouldBeRevealed) {
                     section.classList.add("reveal-content");
                 }
@@ -31,13 +31,13 @@ const revealContent = () => {
     } 
 };
 
-const handleHeaderReadability = () => {
+const handleTopNavReadability = () => {
     const makeMoreReadable = document.body.scrollTop > 0;
     if(makeMoreReadable) {
-        makeHeaderMoreReadable();
+        makeTopNavMoreReadable();
     }
     else {
-        setDefaultHeaderReadability();
+        setDefaultTopNavReadability();
     }
 }
 
@@ -60,17 +60,17 @@ const activatePreviewFlashcardsButton = () => {
 
 const jumpTo = (element) => {
     if(!element) return;
-    const stop = element.getBoundingClientRect().height * .5; // Stop to scroll at the half of the element should be enought to reveal content
+    const stop = element.getBoundingClientRect().height;
     document.body.scrollTo({
         top: stop,
         behavior: "smooth"
     });
 }
 
-const makeHeaderMoreReadable = () => {
-    document.querySelector("header").classList.add("better-visible")
+const makeTopNavMoreReadable = () => {
+    document.getElementById("top-nav").classList.add("better-visible")
 }
 
-const setDefaultHeaderReadability = () => {
-    document.querySelector("header").classList.remove("better-visible")
+const setDefaultTopNavReadability = () => {
+    document.getElementById("top-nav").classList.remove("better-visible")
 }

@@ -1,12 +1,26 @@
 .flashcard {
     border-radius: 16px;
     position: relative;
+    font-family: "Hurme-2", sans-serif;
 }
 
 .flashcard.small {
    width: 250px;
    height: 200px;
    margin-right: 2em; 
+}
+
+.flashcard-area-broad {
+    width: 350px;
+    height: auto;
+    margin-right: 2em;
+}
+
+.flashcard.broad {
+    width: 350px;
+    height: 200px;
+    margin-right: 2em;
+    margin-bottom: 1em;
 }
 
 .flashcard.front {

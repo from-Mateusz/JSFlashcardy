@@ -1,9 +1,8 @@
-$header-height: 50px;
-$main-min-height: calc(100vh - $header-height);
+@import "./env";
 
-header {
+nav#top-nav {
     width: 100%;
-    height: $header-height;
+    height: $nav-height;
     position: fixed;
     z-index: 99;
     transition: opacity .5s ease-in-out;
@@ -16,13 +15,21 @@ header {
 }
 
 main {
-    padding: 2em;
-    padding-top: $header-height;
+    padding: 4em;
+    padding-top: $nav-height;
     min-height: $main-min-height;;
 }
 
 #container-1 {
     height: $main-min-height;
+}
+
+.container-n {
+    height: 100vh;
+}
+
+.container-n {
+    height: 100vh;
 }
 
 #container-2 {
@@ -40,12 +47,23 @@ section {
 }
 
 section {
-    &.hiden-but-revealed {
+    &.half-width {
+        width: 50%;
+        max-width: 50%;
+    }
+}
+
+section {
+    &.hidden-but-revealed {
         opacity: 0;
     }
 
     &.extended {
         max-width: 100%;
+    }
+
+    &.max-content-width {
+        max-width: max-content;
     }
 }
 

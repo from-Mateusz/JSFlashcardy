@@ -1,3 +1,30 @@
+@import "./env";
+
 .center-by-margins {
    margin-left: auto; margin-right: auto; 
+}
+
+.add-bottom-margin--small {
+   margin-bottom: 1em;
+}
+
+.add-bottom-margin--medium {
+   margin-bottom: 2em;
+}
+
+.add-right-margin--medium {
+   margin-right: 2em;
+}
+
+.add-padding-top--huge {
+   padding-top: 4em;
+   box-sizing: border-box;
+}
+
+.add-padding-top-including-top-nav {
+   padding-top: $nav-height;
+}
+
+.set-full-height {
+   height: 100%;
 }

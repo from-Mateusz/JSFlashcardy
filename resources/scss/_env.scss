@@ -7,6 +7,9 @@ $color-light-gold: #F6E7CB;
 $color-gold: #eed3a0;
 $color-light-smoke-white: #f8f9fa;
 
+$nav-height: 50px;
+$main-min-height: calc(100vh - $nav-height);
+
 :root {
     --color-lighter-black: #{$color-lighter-black};
     --color-dark-black: #{$color-dark-black};
